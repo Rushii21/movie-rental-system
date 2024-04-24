@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./st.css">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> -->
+    <link rel="stylesheet" href="C:\Users\hp\Desktop\movies\static\styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Rental System</title>
+</head>
+<body>
+    <div class="head">
+        <p>Welcome To The Movie Rental System</p>
+    </div>
+
+    <div class="bar">
+            <!-- messages -->
+            <div class="popup">
+                {% if message %}
+                    <p>{{ message }}</p>
+                {% endif %}
+            </div>
+    </div>
+    <div class="ac">
+        <div class="rentret">
+
+            <div class="rentPage">
+                <!-- Rent Movie Form -->
+                <form action="/rent_movie" method="post">
+                    <p class="mname">Rent a Movie</p>
+                    <label for="customer_id" class="chotu">Customer ID:</label>
+                    <input type="text" id="customer_id" name="customer_id" class="box"><br><br>
+
+                    <label for="movie_id" class="chotu">Movie ID:</label>
+                    <input type="text" id="movie_id" name="movie_id" class="box"><br><br>
+
+                    <input type="submit" value="Rent Movie" class="touch">
+                </form>
+            </div>
+
+            <div class="rtrnPage">
+
+                <!-- Return Movie Form -->
+                <form action="/return_movie" method="post">
+                    <p class="mname">Return a Movie</p>
+                    <label for="rental_id" class="chotu">Rental ID:</label>
+                    <input type="text" id="rental_id" name="rental_id" class="box"><br><br>
+
+                    <input type="submit" value="Return Movie" class="touch">
+                </form>
+
+            </div>
+        </div>
+
+
+        <div class="addremov">
+            <div class="add">
+                <div class="mname2">
+                    <p>Add Movie</p>
+                </div>
+                <form action="/add_movie" method="post" class="chotu">
+                    Title: <input type="text" name="title" class="box"><br>
+                    Genre: <input type="text" name="genre" class="box"><br>
+                    <input type="submit" value="Submit" class="touch">
+                </form>
+            </div>
+            <div class="remov">
+                <div class="mname2">
+                    <p>Delete Movie
+                    <p></p>
+                </div>
+                <form action="/delete_movie" method="post" class="chotu">
+                    Movie ID: <input type="text" name="movie_id" class="box"><br>
+                    <input type="submit" value="Submit" class="touch">
+                </form>
+            </div>
+        </div>
+
+        <div class="cust">
+            <div class="addd">
+                <div class="mname">
+                    <p>Add Customer</p>
+                </div>
+                <form action="/add_customer" method="post" class="chotu">
+                    Name: <input type="text" name="name" class="box"><br>
+                    Email: <input type="text" name="email" class="box"><br>
+                    <input type="submit" value="Submit" class="touch">
+                </form>
+            </div>
+            <div class="remm">
+                <div class="mname">
+                    <p>Delete Customer</p>
+                </div>
+                <form action="/delete_customer" method="post" class="chotu">
+                    Customer ID: <input type="text" name="customer_id" class="box"><br>
+                    <input type="submit" value="Submit" class="touch">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+</body>
+
+</html>

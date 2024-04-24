@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Heebo&family=Lexend+Deca:wght@700&family=Merienda:wght@600&family=Pacifico&family=Poppins:wght@300&family=Quicksand:wght@400;500;700&family=Roboto&family=Roboto+Condensed&family=Rubik:wght@500&family=Staatliches&family=Ubuntu&display=swap');
+.body ,*{
+    padding: 0;
+    margin: 0;
+}
+
+.head{
+    height: 90px;
+    font-family: "merienda",sans-serif;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+    font-size: 60px;
+    color: #F5F5F5;
+    background-color: #363062;
+
+}
+.rentret{
+    font-family: "Quicksand",sans-serif;
+    justify-content:space-around;
+    height: 40vh;
+    align-items: center;
+    width: auto;
+    background-color: #4D4C7D;
+    color: whitesmoke;
+    display: flex;
+}
+.mname{
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.rentPage{
+    height: auto;
+    width: auto;
+    padding: 10px;
+    margin: 20px 50px;
+}
+.rtrnPage{
+    height: auto;
+    width: auto;
+    padding: 10px;
+    margin: 20px 50px;
+}
+.box{
+    height: 30px;
+    width: 300px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    font-family: "ubuntu",sans-serif;
+    font-size: 20px;
+    padding: 2px;
+    background-color: #F5F5F5;
+    border: 0;
+}
+.chotu{
+    margin-bottom:10px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.touch{
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0cap;
+}
+.touch:hover{
+    box-shadow: 1px 1px 5px black ;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+.addremov{
+    font-family: "Quicksand",sans-serif;
+    justify-content:space-around;
+    height: 40vh;
+    align-items: center;
+    width: auto;
+    background-color: #51417f;
+    color: whitesmoke;
+    display: flex;
+}
+.mname2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.chotu2{
+    margin-bottom:15px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.cust{
+    height: 40vh;
+    background-color: #584690;
+    font-family: "Quicksand",sans-serif;
+    justify-content:space-around;
+    align-items: center;
+    width: auto;
+    color: whitesmoke;
+    display: flex;
+}
+
+.bar{
+    height: 40px;
+    width: auto;
+    color: whitesmoke;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "Ubuntu",sans-serif;
+    text-align:center;
+    background-color: rgb(33, 38, 64)
+}
+
+
+
+  
